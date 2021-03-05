@@ -1,0 +1,15 @@
+{
+  "name": "js",
+  "version": "1.0.0",
+  "description": "JS Tests",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha index.js; exit 0"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "expect": "^1.20.2",
+    "mocha": "^3.4.2"
+  }
+}
