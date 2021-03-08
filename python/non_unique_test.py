@@ -17,9 +17,13 @@ e.g.
 
 
 def non_unique(sequence):
-    # Write your code here
+    result = []
 
-    return None
+    for item in sequence:
+        if sequence.count(item) > 1:
+            result.append(item)
+
+    return result
 
 
 def test_one():

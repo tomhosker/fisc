@@ -5,6 +5,9 @@
   - For numbers which are multiples of both three and five return "FizzBuzz"
 """
 
+FIZZBUZZ_MAX_NUMBER = 100
+FIZZ_DIVISOR = 3
+BUZZ_DIVISOR = 5
 
 def fizz_buzz():
     """
@@ -13,9 +16,17 @@ def fizz_buzz():
     """
 
     ret_values = []
+    divisor_product = FIZZ_DIVISOR*BUZZ_DIVISOR
 
-    # Write your code here - The function should return a list of values as
-    # shown in the method docstring.
+    for index in range(1, FIZZBUZZ_MAX_NUMBER+1):
+        if index%divisor_product == 0:
+            ret_values.append("FizzBuzz")
+        elif index%FIZZ_DIVISOR == 0:
+            ret_values.append("Fizz")
+        elif index%BUZZ_DIVISOR == 0:
+            ret_values.append("Buzz")
+        else:
+            ret_values.append(index)
 
     return ret_values
 
